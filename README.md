@@ -43,3 +43,6 @@ Install the ppa for git-core to ensure the most up to date version is installed 
 
 git config --global user.email <email address>
 git config --global user.name "Mark Whitby"
+git config --global credential.helper store
+
+Still checking in on that last command around credentials. SSH auth seems to work on the command line but not in Code.
