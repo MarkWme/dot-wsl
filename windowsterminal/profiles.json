@@ -1,0 +1,93 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+
+    "initialCols": 200,
+    "initialRows": 50,
+    "requestedTheme": "system",
+    "showTerminalTitleInTitlebar": true,
+    "tabWidthMode": "equal",
+    "confirmCloseAllTabs": true,
+    "copyOnSelect": true,
+    "launchMode": "maximized",
+
+    "profiles":
+    {
+        "defaults":
+        {
+            //"experimental.retroTerminalEffect": true,
+            "fontFace": "Cascadia Code",
+            "fontSize": 12,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.5,
+            "cursorShape": "filledBox"
+        },
+        "list":
+        [
+            {
+                // WSL2 Ubuntu
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory" : "//wsl$/Ubuntu/home/mark",
+                "colorScheme": "Snazzy"
+            },
+            {
+                // cmd
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                // Cloud Shell
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                // Powershell
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "Snazzy",
+            "black": "#000000",
+            "red": "#fc4346",
+            "green": "#50fb7c",
+            "yellow": "#f0fb8c",
+            "blue": "#49baff",
+            "purple": "#fc4cb4",
+            "cyan": "#8be9fe",
+            "white": "#ededec",
+            "brightBlack": "#555555",
+            "brightRed": "#fc4346",
+            "brightGreen": "#50fb7c",
+            "brightYellow": "#f0fb8c",
+            "brightBlue": "#49baff",
+            "brightPurple": "#fc4cb4",
+            "brightCyan": "#8be9fe",
+            "brightWhite": "#ededec",
+            "background": "#1e1f29",
+            "foreground": "#ebece6"
+          }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
