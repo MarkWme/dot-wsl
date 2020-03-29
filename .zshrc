@@ -72,10 +72,13 @@ plugins=(git
          docker
          kubectl
          helm
+         ssh-agent
          sudo
          terraform
          zsh-autosuggestions
          zsh-syntax-highlighting)
+
+zstyle :omz:plugins:ssh-agent identities id_rsa github
 
 source $ZSH/oh-my-zsh.sh
 
