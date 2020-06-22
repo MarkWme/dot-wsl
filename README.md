@@ -27,6 +27,10 @@ Install zsh-autosuggestions
 
 Install ssh-agent plugin and configure with ```zstyle :omz:plugins:ssh-agent identities id_rsa github```
 
+Install keychain - ```sudo apt install keychain```
+
+Install keychain plugin for zsh?
+
 ### Docker
 At current, Docker's experimental support for WSL2 does not install the client tools, so after you've set up Docker to work with WSL2, you will also need to follow the instructions on Docker's website for installing docker-ce on Ubuntu.
 
